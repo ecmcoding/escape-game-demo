@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cu8s1o8q70hfl"]
+
+[ext_resource type="AudioStream" uid="uid://4pu8jxskqyk0" path="res://addons/mixkit-giant-monster-roar-1972.wav" id="1_orqwv"]
+
+[node name="GameOverSound" type="AudioStreamPlayer3D" unique_id=369668105]
+stream = ExtResource("1_orqwv")

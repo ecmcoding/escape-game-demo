@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://15sy5drik08o"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4mq21"]
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4mq21"]
+radius = 0.01
+height = 0.02
+
+[node name="GPUParticles3D" type="GPUParticles3D" unique_id=1101729578]
+transform = Transform3D(1.5334042, 0, 0, 0, 1, 0, 0, 0, 1, -0.86507183, 0, 0)
+amount = 13
+process_material = SubResource("ParticleProcessMaterial_4mq21")
+draw_pass_1 = SubResource("CapsuleMesh_4mq21")

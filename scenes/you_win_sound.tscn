@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bky6pqfhkge73"]
+
+[ext_resource type="AudioStream" uid="uid://bn0qsjtegja6j" path="res://addons/mixkit-conference-audience-clapping-strongly-476.wav" id="1_gh6um"]
+
+[node name="YouWinSound" type="AudioStreamPlayer3D" unique_id=1274113694]
+stream = ExtResource("1_gh6um")

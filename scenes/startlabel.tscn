@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://drfdo85svtpgb"]
+
+[node name="startlabel" type="Label3D" unique_id=553609398]
+text = "Enter to start the game"

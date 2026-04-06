@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cl7yhtcghok83"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_50lnl"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kv18c"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+gravity = Vector3(0, 98, 0)
+scale_max = 2.0
+
+[node name="Weather2d" type="GPUParticles2D" unique_id=836774729]
+material = SubResource("CanvasItemMaterial_50lnl")
+scale = Vector2(3933.777, -1732.9071)
+amount = 1000
+lifetime = 3.9099999999999997
+process_material = SubResource("ParticleProcessMaterial_kv18c")

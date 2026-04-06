@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://by06mj7dblmpj"]
+
+[ext_resource type="Script" uid="uid://dx25k7vt0a5c3" path="res://tutorial_screen.gd" id="1_obyet"]
+[ext_resource type="Texture2D" uid="uid://dad156x1lkbkp" path="res://addons/misty_pines_4k.exr" id="2_rn67y"]
+[ext_resource type="PackedScene" uid="uid://cl7yhtcghok83" path="res://scenes/weather_2d.tscn" id="3_2xfp7"]
+
+[node name="TutorialScreen" type="Node2D" unique_id=236087283]
+script = ExtResource("1_obyet")
+
+[node name="BackToMenuButton" type="Button" parent="." unique_id=1510778041]
+offset_left = 874.0
+offset_top = 268.0
+offset_right = 1130.0
+offset_bottom = 364.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 64
+text = "Go back"
+flat = true
+
+[node name="Label" type="Label" parent="." unique_id=1554379771]
+offset_left = 29.0
+offset_top = 297.0
+offset_right = 1124.0
+offset_bottom = 882.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 28
+text = "Tutorial:
+You were caught by a dangerous monster!
+To get away you have to find your way out through the maze, 
+but be careful, if it hears you it will eat you!
+
+When you hear it you have to stand COMPLETELY STILL until it's quiet again...
+
+Controls: Move using WASD | Run using SHIFT | Jump using SPACE"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=938572643]
+z_index = -6
+z_as_relative = false
+position = Vector2(303, 243.00002)
+scale = Vector2(0.465, 0.465)
+texture = ExtResource("2_rn67y")
+
+[node name="Weather2d" parent="." unique_id=836774729 instance=ExtResource("3_2xfp7")]
+
+[connection signal="pressed" from="BackToMenuButton" to="." method="_on_back_to_menu_button_pressed"]

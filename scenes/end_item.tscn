@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://duo43yvjitw3x"]
+
+[ext_resource type="Script" uid="uid://cgn0oih3efyja" path="res://scripts/end.gd" id="1_usa0m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2bhos"]
+size = Vector3(1.1763916, 1, 0.3232422)
+
+[node name="end_item" type="CSGBox3D" unique_id=490893316]
+transparency = 0.6
+size = Vector3(1.1389465, 1, 0.28466797)
+
+[node name="end3d" type="Area3D" parent="." unique_id=2120276716]
+script = ExtResource("1_usa0m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="end3d" unique_id=1885788907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008972168, 0, -0.013183594)
+shape = SubResource("BoxShape3D_2bhos")
+
+[connection signal="body_entered" from="end3d" to="end3d" method="_on_body_entered"]

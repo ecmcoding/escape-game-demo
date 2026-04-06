@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c2c1ti5s6p8qs"]
+
+[ext_resource type="Script" uid="uid://cgmh1fq6u2flp" path="res://scripts/music_player.gd" id="1_ql6qh"]
+[ext_resource type="AudioStream" uid="uid://cld4lt7oojfdp" path="res://addons/mixkit-thunderstorm-and-rain-loop-2402.wav" id="2_l7xiw"]
+
+[node name="MusicPlayer" type="Node2D" unique_id=882980915]
+script = ExtResource("1_ql6qh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1801145905]
+stream = ExtResource("2_l7xiw")
+autoplay = true
