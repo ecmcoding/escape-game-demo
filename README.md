@@ -1,6 +1,7 @@
-Uses Brackeys Proto Controller (modified) https://github.com/Brackeys/brackeys-proto-controller
+Uses Brackeys Proto Controller (modified)  <br />
+https://github.com/Brackeys/brackeys-proto-controller
 
-Assets from: 
-https://polyhaven.com/
-https://itch.io/game-assets/assets-cc0/free/tag-godot
-https://mixkit.co/free-sound-effects/
+Assets from:  <br />
+https://polyhaven.com/  <br />
+https://itch.io/game-assets/assets-cc0/free/tag-godot  <br />
+https://mixkit.co/free-sound-effects/ 
